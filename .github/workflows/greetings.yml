@@ -2,7 +2,7 @@ name: Greetings
 
 on:
   schedule:
-    - cron : "*/1 * * * *"
+    - cron: '*/1 * * * *'
     #[pull_request_target, issues]
 
 jobs:

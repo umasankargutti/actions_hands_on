@@ -2,13 +2,6 @@ name: 📅 Schedule Workflow Dispatch
 on:
   schedule:
     - cron: '*/1 * * * *'
-  workflow_dispatch:
-    inputs:
-      date:
-        description: 'Date to run the workflow'
-        required: true
-        type: string
-        default: 'in 1 hour'
 concurrency:
   group: schedule${{ github.event.inputs.date }}
   cancel-in-progress: true

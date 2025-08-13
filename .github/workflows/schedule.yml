@@ -1,6 +1,7 @@
+name: schedule_event
 on:
   schedule:
-    - cron: '50 12 * * *'
+    - cron: '*/2 * * * *'
 jobs:
   test_schedule:
     runs-on: ubuntu-latest
